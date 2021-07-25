@@ -20,16 +20,20 @@ public class NewClass {
         
         int n = input.nextInt();
         
+        double s = 0;
+        
+        int m = 0;
+        
         int i = 1;
         
         while(i <= n)
         {
-            if(n % i == 0)
-            {
-                System.out.println("" + i);
-            }
+            m = m + i;
+            
+            s = s + 1.0 / m;
             
             i = i + 1;
         }
+        System.out.println("s = " + s);
     }
 }

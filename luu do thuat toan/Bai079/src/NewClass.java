@@ -8,7 +8,6 @@
  *
  * @author LPSang
  */
-
 import java.util.Scanner;
 
 public class NewClass {
@@ -20,16 +19,20 @@ public class NewClass {
         
         int n = input.nextInt();
         
+        double s = 0;
+        
+        int t = 1;
+        
         int i = 1;
         
         while(i <= n)
         {
-            if(n % i == 0)
-            {
-                System.out.println("" + i);
-            }
+            t = t * i;
+            
+            s = s + i * t;
             
             i = i + 1;
         }
+        System.out.println("s = " + s);
     }
 }

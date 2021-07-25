@@ -20,16 +20,21 @@ public class NewClass {
         
         int n = input.nextInt();
         
+        System.out.print("Enter k = ");
+        
+        int k = input.nextInt();
+        
+        double s = 0;
+        
         int i = 1;
         
         while(i <= n)
         {
-            if(n % i == 0)
-            {
-                System.out.println("" + i);
-            }
+            s = s + Math.pow(i, k);
             
             i = i + 1;
         }
+        
+        System.out.print("s = "+ s);
     }
 }
